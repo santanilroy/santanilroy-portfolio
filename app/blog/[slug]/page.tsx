@@ -1,4 +1,3 @@
-// app/blog/[slug]/page.tsx
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
@@ -8,14 +7,14 @@ import { MoveLeft } from "lucide-react";
 import "../../globals.css"; // Ensure global styles are imported
 import Link from "next/link";
 
-type BlogPostParams = {
-  params: {
-    slug: string;
-  };
+type BlogPostProps = {
+  params: Promise<{ slug: string }>; // ✅ Promise type
 };
 
-export default async function BlogPost({ params }: BlogPostParams) {
-  const filePath = path.join(process.cwd(), "content", `${params.slug}.md`);
+export default async function BlogPost({ params }: BlogPostProps) {
+  const { slug } = await params; // ✅ await before use
+
+  const filePath = path.join(process.cwd(), "content", `${slug}.md`);
   const fileContent = fs.readFileSync(filePath, "utf-8");
   const { content } = matter(fileContent);
 
@@ -29,9 +28,7 @@ export default async function BlogPost({ params }: BlogPostParams) {
           />
         </Link>
         <h1 className="text-5xl font-bold mb-4">
-          {params.slug
-            .replace(/-/g, " ")
-            .replace(/\b\w/g, (c) => c.toUpperCase())}
+          {slug.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase())}
         </h1>
         <MDXRemote source={content} />
         <p className="mt-6 text-sm text-gray-500">
