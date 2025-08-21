@@ -3,21 +3,19 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import { MDXRemote } from "next-mdx-remote/rsc";
-// import ReactMarkdown from "react-markdown";
 import { Container } from "@/components/container";
 import { MoveLeft } from "lucide-react";
 import "../../globals.css"; // Ensure global styles are imported
 import Link from "next/link";
 
-type BlogPostParams = { params: { slug: string } };
+type BlogPostParams = {
+  params: {
+    slug: string;
+  };
+};
 
 export default async function BlogPost({ params }: BlogPostParams) {
-  const resolvedParams = await params; // Await params if it's a Promise
-  const filePath = path.join(
-    process.cwd(),
-    "content",
-    `${resolvedParams.slug}.md`
-  );
+  const filePath = path.join(process.cwd(), "content", `${params.slug}.md`);
   const fileContent = fs.readFileSync(filePath, "utf-8");
   const { content } = matter(fileContent);
 
@@ -31,7 +29,7 @@ export default async function BlogPost({ params }: BlogPostParams) {
           />
         </Link>
         <h1 className="text-5xl font-bold mb-4">
-          {resolvedParams.slug
+          {params.slug
             .replace(/-/g, " ")
             .replace(/\b\w/g, (c) => c.toUpperCase())}
         </h1>
@@ -42,4 +40,13 @@ export default async function BlogPost({ params }: BlogPostParams) {
       </article>
     </Container>
   );
+}
+
+export async function generateStaticParams() {
+  const contentDir = path.join(process.cwd(), "content");
+  const files = fs.readdirSync(contentDir);
+
+  return files.map((file) => ({
+    slug: file.replace(/\.md$/, ""),
+  }));
 }
