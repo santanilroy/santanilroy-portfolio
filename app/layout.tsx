@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import "./favicon.ico";
+import "../public/android-chrome-192x192.png";
+import "../public/apple-touch-icon.png";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import { ThemeProvider } from "@/components/ui/theme-provider";
@@ -11,6 +14,10 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
   title: "Santanil Roy - Frontend Developer",
   description:
     "Personal portfolio of Santanil Roy, showcasing skills and projects.",
