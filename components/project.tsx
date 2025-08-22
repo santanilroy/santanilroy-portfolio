@@ -13,7 +13,7 @@ const Project = () => {
       title: "Bloggers",
       description:
         "A modern blogging platform built with JavaScript, enabling users to create, manage, and share blog posts easily.",
-      href: "my-blog-app-seven-black.vercel.app",
+      href: "https://my-blog-gsh855egm-santanil-roys-projects.vercel.app/",
       tech: [
         { name: "JavaScript" },
         { name: "React" },
@@ -40,7 +40,7 @@ const Project = () => {
       title: "TODO List",
       description:
         "A simple TODO list application built with Next.js and TypeScript.",
-      href: "https://santanilroy.github.io/TO-DO-LIST/",
+      href: "https://santanilroy.github.io/Vite-ToDoList/",
       tech: [
         { name: "Vite" },
         { name: "React" },
