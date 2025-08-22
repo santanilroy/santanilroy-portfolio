@@ -60,7 +60,7 @@ const Contact = () => {
         </button>
         <a
           href="https://wa.me/7439273941?text=I want to work on a project with you"
-          className="inline-flex items-center px-4 py-2 mx-5 border border-transparent rounded-md shadow-sm text-sm font-medium text-black bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
+          className="inline-flex items-center px-2 md:px-4 py-2 mx-2 md:mx-5 border border-transparent rounded-md shadow-sm text-sm font-medium text-black bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
         >
           Chat on WhatsApp
         </a>
