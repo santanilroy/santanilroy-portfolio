@@ -152,7 +152,7 @@ const ResourcesPage = () => {
             >
               <motion.div
                 key={resource.id}
-                className="border-b dark:border-gray-700 border-gray-200 py-4 bg-white/35 p-4 rounded-2xl w-[350px] h-[138px] cursor-pointer"
+                className="border-b dark:border-gray-700 border-gray-200 py-4 bg-white/35 p-4 rounded-2xl w-[300px] md:w-[350px] h-[138px] cursor-pointer"
                 initial={{
                   opacity: 0,
                   y: 20,
