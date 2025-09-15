@@ -15,7 +15,7 @@ const Footer = () => {
               <Link href="/blog">Blog</Link>
               <Link href="/resources">Resources</Link>
               <Link href="/projects">Projects</Link>
-              <Link href="#">Dashboard</Link>
+              <Link href="/dashboard">Dashboard</Link>
             </div>
             <div className="flex flex-col space-y-4">
               <Link href="https://github.com/santanilroy">GitHub</Link>
