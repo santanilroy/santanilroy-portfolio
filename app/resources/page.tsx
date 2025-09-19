@@ -145,7 +145,7 @@ const ResourcesPage = () => {
       id: 19,
       title: "Pattern Carft",
       description:
-        "Professional-grade background patterns and gradients. Easily copy the code and seamlessly integrate it into your projects. Crafted with modern CSS and Tailwind.",
+        "Professional-grade background patterns and gradients. Easily copy the code and seamlessly integrate it into your projects.",
       link: "https://patterncraft.fun/",
       name: "Pattern Craft",
     },

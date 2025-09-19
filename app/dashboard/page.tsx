@@ -74,7 +74,7 @@ const DashboardPage = () => {
                   GitHub Followers {data[0].owner?.followers || 0}
                 </Link>
               ) : (
-                <p>Loading...</p>
+                <p className="animate-pulse">Loading...</p>
               )}
             </div>
             <div className="border-b-2 dark:border-gray-700 border-gray-200 py-4 bg-black/35 p-4 rounded-2xl w-[300px] md:w-[350px] h-[138px] cursor-pointer">
