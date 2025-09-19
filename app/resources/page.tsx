@@ -126,6 +126,37 @@ const ResourcesPage = () => {
       link: "https://supercreative.design/1000-inspiring-websites",
       name: "supercreative.design",
     },
+    {
+      id: 17,
+      title: "TeweakCN",
+      description:
+        "Design your perfect Shadcn/UI Theme with customizable colors, typography, and layout with real-time preview.",
+      link: "https://tweakcn.com/",
+      name: "TeweakCN",
+    },
+    {
+      id: 18,
+      title: "Motion Primitives",
+      description: "UI kit to make beautiful, animated interfaces, faster.",
+      link: "https://motion-primitives.com/",
+      name: "Motion Primitives",
+    },
+    {
+      id: 19,
+      title: "Pattern Carft",
+      description:
+        "Professional-grade background patterns and gradients. Easily copy the code and seamlessly integrate it into your projects. Crafted with modern CSS and Tailwind.",
+      link: "https://patterncraft.fun/",
+      name: "Pattern Craft",
+    },
+    {
+      id: 20,
+      title: "React Scan",
+      description:
+        "React Scan automatically detects performance issues in your React app.",
+      link: "https://react-scan.com/",
+      name: "React Scan",
+    },
   ];
 
   return (
