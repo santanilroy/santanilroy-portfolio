@@ -55,7 +55,7 @@ const DashboardPage = () => {
     <>
       <Container className="max-w-3xl mx-auto px-4 py-8 min-h-screen p-4 md:pt-30 md:pb-10">
         <div className="min-h-screen flex flex-col justify-center">
-          <h1 className="text-4xl font-bold text-neutral-900 dark:text-neutral-200">
+          <h1 className="text-4xl font-bold mt-10 text-neutral-900 dark:text-neutral-200">
             Welcome to the Dashboard
           </h1>
 

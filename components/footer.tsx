@@ -29,7 +29,7 @@ const Footer = () => {
             </div>
             <div className="flex flex-col space-y-4">
               <Link href="/about">About</Link>
-              <Link href="#">Snippets</Link>
+              <Link href="/snippets">Snippets</Link>
               <Link href="https://ui.shadcn.com/">ShadCn</Link>
               <Link href="#">Links</Link>
             </div>
