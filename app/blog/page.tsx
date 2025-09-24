@@ -32,6 +32,14 @@ const Allblog = () => {
       views: 993,
       href: "/blog/resource-card",
     },
+
+    {
+      id: 5,
+      title:
+        "The Difference Between a Dummy Weather App and a Real Engineered Weather App",
+      views: 1050,
+      href: "/blog/weatherapp-blog",
+    },
   ];
 
   return (
