@@ -3,6 +3,7 @@ import Contact from "@/components/contact";
 import { Container } from "@/components/container";
 import Project from "@/components/project";
 import Skills from "@/components/skills";
+import { TextEffect } from "@/components/motion-primitives/text-effect";
 import Image from "next/image";
 import React from "react";
 
@@ -23,13 +24,18 @@ const page = () => {
               className="rounded-4xl"
             />
           </div>
-          <p className="mt-10 text-gr text-neutral-600 dark:text-neutral-400">
+          <TextEffect
+            preset="fade-in-blur"
+            speedReveal={1.1}
+            speedSegment={0.3}
+            className="mt-10 text-gr text-neutral-600 dark:text-neutral-400"
+          >
             I’m a passionate Frontend Developer with a knack for crafting
             modern, responsive, and user-friendly web applications. Skilled in
             HTML, CSS, JavaScript, React, Tailwind CSS, and Node.js, I love
             turning ideas into visually appealing and functional digital
             experiences.
-          </p>
+          </TextEffect>
           <Skills />
           <Project />
           <Blog />

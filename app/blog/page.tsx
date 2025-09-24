@@ -25,6 +25,13 @@ const Allblog = () => {
       views: 1600,
       href: "/blog/bloggers",
     },
+
+    {
+      id: 4,
+      title: "Here’s a code snippet showing how I built my resource cards.",
+      views: 993,
+      href: "/blog/resource-card",
+    },
   ];
 
   return (
